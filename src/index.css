@@ -80,3 +80,8 @@ a:focus {
 .users ul {
   list-style-type: none;
 }
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
