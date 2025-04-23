@@ -1,12 +1,37 @@
-# React + Vite
+# Redux JWT Auth (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the **frontend** portion of a full-stack authentication system built with **React**, **Redux Toolkit**, and **RTK Query**. It supports **JWT authentication** with **access and refresh tokens**, automatic re-authentication, and protected routes using React Router.
 
-Currently, two official plugins are available:
+> The backend is required for this app to work. You can use [gitdagray/redux_jwt_auth](https://github.com/gitdagray/redux_jwt_auth) or your own Express-based backend that exposes `/auth`, `/refresh`, `/logout`, and `/users`.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- JWT-based login with Redux state
+- Access token refresh on 403 errors
+- Protected routes using `<RequireAuth />`
+- Logout support with state cleanup
+- Ready for role-based authorization
+- API calls with `fetchBaseQuery` via RTK Query
+
+---
+
+## Tech Stack
+
+- React
+- Redux Toolkit
+- RTK Query
+- React Router v7
+- JavaScript (ES6+)
+
+---
+
+## Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/ismailtaher/redux-jwt-auth.git
+cd redux-jwt-auth
+npm install
